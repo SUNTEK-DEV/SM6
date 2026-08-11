@@ -1,0 +1,6 @@
+2026/02/03
+First Create:System ICC MSR PICC PRINTER PCI 
+
+2026/03/20
+1.apidemo renamed to HardwareTest: added fingerprint module and secondary screen function tests, with more peripheral function tests to be included.
+2.The appserver has been updated to support Android 16.

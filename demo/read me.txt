@@ -1,0 +1,5 @@
+Usage Instructions:
+1. AppServer.apk (service application) 
+2.PinEntry.apk (password input keypad, invoked by AppServer)
+3.HardwareTest.apk (interface demonstration application)
+4.loadtools.apk(load SP firmware)
