@@ -1,13 +1,13 @@
-# US880 POS Terminal SDK — V1.0.1
+# SM6 POS Terminal SDK — V1.0.1
 
-Software Development Kit for the **US880 POS (Point-of-Sale) terminal**, an Android-based smart payment device. This SDK provides libraries, firmware, demo applications, and documentation to integrate and test the terminal's hardware peripherals.
+Software Development Kit for the **SM6 POS (Point-of-Sale) terminal**, an Android-based smart payment device. This SDK provides libraries, firmware, demo applications, and documentation to integrate and test the terminal's hardware peripherals.
 
 ---
 
 ## Repository Structure
 
 ```
-├── SP firmware/          # Secure Processor (SP) firmware binary
+├── 
 ├── demo/                 # Demo APKs and HardwareTest source project
 │   ├── uf-hardwaretest/  # Android Studio project — hardware test application
 │   ├── AppServer.apk     # Background service APK (required by the SDK)
@@ -54,7 +54,7 @@ Software Development Kit for the **US880 POS (Point-of-Sale) terminal**, an Andr
 
 ## Firmware
 
-- **SP Firmware:** `US880-App_V1.0.3_1210_signed.bin` — Secure Processor application firmware. Loaded onto the device via `loadtools.apk`.
+- **SP Firmware:** `SM6-App_V1.0.3_1210_signed.bin` — Secure Processor application firmware. Loaded onto the device via `loadtools.apk`.
 - **Printer firmware assets:** `PRT_UPDATE.bin`, printer model-specific firmware files included in the demo app's `assets/`.
 
 ---
@@ -101,7 +101,7 @@ The `demo/uf-hardwaretest/` directory contains a full **Android Studio (Gradle)*
 
 ## Requirements
 
-- **Device:** US880 POS terminal (manufacturer: **Unifou**)
+- **Device:** SM6 POS terminal (manufacturer: **Unifou**)
 - **OS:** Android 12+ (API 31+)
 - **Build:** Android Studio (Gradle 8.x, JDK 8+)
 - **Signing:** System-level keystore required (shared UID `android.uid.system`)
@@ -110,6 +110,6 @@ The `demo/uf-hardwaretest/` directory contains a full **Android Studio (Gradle)*
 
 ## Notes
 
-- The SDK is intended for **system-level** applications running on the US880 POS terminal hardware. It is not a general-purpose Android library.
+- The SDK is intended for **system-level** applications running on the SM6 POS terminal hardware. It is not a general-purpose Android library.
 - Native libraries (`.so`) are currently provided for **arm64-v8a** and **armeabi-v7a** architectures.
 - The `DeviceAPI` AAR is the primary entry point for peripheral control; the demo app's `MainActivity` shows the initialization pattern via `com.pos.api.Sys`.
